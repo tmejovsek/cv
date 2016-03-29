@@ -1,0 +1,562 @@
+/*GENERAL*/
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.icon {
+  font-size: 24px;
+  color: white;
+  margin: 0 15px;
+  transition: all .3s linear;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+ border: 0;
+ height: 1px;
+ background: #333;
+ background-image: linear-gradient(to right, #ccc, #333, #ccc);
+ margin: 50px 0px;
+}
+
+/*ICONE +*/
+.iconPlus {
+  font-size: 32px;
+  transform: rotate(-45deg);
+  transition: all .5s linear;
+}
+
+/*HOME*/
+#home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+}
+
+/*PARTIE GAUCHE*/
+#accueil {
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  transform: skewX(-25deg);
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  transition: all .3s linear;
+
+}
+
+/*CONTENU PARTIE GAUCHE*/
+#contentPres {
+  position: fixed;
+  color: white;
+  width: 50%;
+  height: 100%;
+  padding: 2% 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+#imageProfil {
+  border-radius: 50%;
+  max-width: 100%;
+  max-height: 100%;
+  align-self: center;
+  margin-bottom: 5%;
+}
+
+#titre {
+  margin-bottom: 10%;
+}
+
+/*STYLE DES H*/
+
+h1 {
+  font-size: 40px;
+
+}
+
+h2 {
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+h3 {
+  font-size: 24px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+h3.titreSection {
+  font-family: 'Rock Salt', cursive;
+  margin: 100px 0px;
+  font-size: 42px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p {
+  line-height: 20px;
+}
+
+#image {
+  margin: 50px 0px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sousTitreImage {
+  font-size: 10px;
+  opacity: 0.8;
+  letter-spacing: 2px;
+}
+#menuPres {
+  width: 75%;
+  height: 119px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#bigBtn {
+  width: 100%;
+
+}
+
+#twoBtn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bouton{
+  border: 2px solid white;
+  background: none;
+  transition: all .3s linear ;
+  color: white;
+  padding: 0.7em 0%;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#btnPdf, #btnContact{
+  border: 2px solid white;
+  background: none;
+  transition: all .3s linear ;
+  color: white;
+  padding: 0.7em 0%;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 24px;
+}
+
+#btnPdf:hover, #btnContact:hover {
+  background-color: white;
+  color: #373737;
+}
+
+#menuPres i {
+  font-size: 18px;
+}
+
+#menuPres button:hover {
+  background-color: white;
+  color: #373737;
+}
+
+#btnOpen {
+  width: 100%;
+}
+
+#btnPdf {
+  width: 49%;
+}
+
+#btnContact {
+  width: 47%;
+}
+
+#footerPres {
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#footerPres p {
+  font-size: 10px;
+  opacity: .7;
+  letter-spacing: 1px;
+}
+
+/*RESEAUx SOCIAUX*/
+
+#social {
+  position: absolute;
+  left: -4%;
+  bottom: 200%;
+}
+
+#social .ion-social-facebook:hover {
+  color: #3C5A96;
+}
+
+#social .ion-social-twitter:hover {
+  color: #1DADEA;
+}
+
+/*FOND*/
+
+#fond {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/bgHome.jpg");
+  background-size: cover;
+}
+
+/*PARTIE DROITE*/
+
+/*INITIALISATION*/
+.volet {
+  display: none;
+}
+
+.openContenu {
+  width: 50%;
+}
+
+#contenu {
+  height: 100%;
+  display: flex;
+  width: 0;
+  background-color: #FBFCFA;
+  right: 0;
+  position: fixed;
+  z-index: 2;
+  transition: all .3s linear;
+  color: #373737;
+  overflow-y: scroll;
+}
+
+#cross {
+  font-size: 32px;
+  position: fixed;
+  right: 20px;
+  top: 10px;
+  transform: rotate(-180deg);
+  cursor: pointer;
+  color: #373737;
+  transition: all .3s linear;
+}
+
+.hide-cross {
+  right: -40px;
+}
+
+
+
+#content {
+  width: 100%;
+  margin: 65px;
+  opacity: 0;
+  transition: opacity .5s linear .5s;
+}
+
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .bouton {
+  color: white;
+  background-color: #373737;
+  border-color: #373737;
+  padding: 1em 1%;
+  font-size: 14px;
+}
+
+nav .bouton:hover {
+  color: #373737;
+  background-color: white;
+}
+
+nav .bouton.clicked {
+  color: #373737;
+  background-color: white;
+}
+
+
+.forma {
+  width: 100%;
+  height: 250px;
+  background-image: url("../images/logo_upto.png");
+  background-size: cover;
+}
+
+/*SPAN*/
+
+.opacite {
+  opacity: 0.8;
+  font-style: italic;
+}
+
+
+/*ACCORDEON*/
+
+#panorama1 {
+  width: 100%;
+  height: auto;
+
+}
+#slide {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+#slide1 {
+
+  background-image: url("../images/pano1/mibi2.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover ;
+  color: #D8107D;
+}
+
+#slide2 {
+  background-image: url("../images/pano1/Carmes_fac_de_science2.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  color: #01D758;
+}
+
+#slide3 {
+  background-image: url("../images/pano1/lycee Dhuoda2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #1E7FCB;
+
+}
+
+#slide4 {
+  background-image: url("../images/pano1/lycee-de-La-Salle2.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+
+
+  color: #CD853F;
+}
+
+.bar {
+  border: 1px solid black;
+  background-image: url("../images/bg.jpg");
+  overflow: hidden;
+}
+
+.open {
+  border: 1px solid black;
+  /*animation: open 500ms 0ms 1 both alternate;*/
+  transition: height 500ms 0s;
+  background-image: url("../images/bg.jpg");
+  filter: grayscale(0%);
+  height: 400px;
+}
+
+.close {
+  border: 1px solid black;
+  transition: all 500ms 0s;
+  background-image: url("../images/bg.jpg");
+  filter: grayscale(100%);
+  height: 200px;
+}
+
+
+
+.slideTitre {
+  margin: auto;
+  width: 310px;
+  height: 135px;
+  margin-top: 35px;
+  background-color: rgba(52,52,52,0.8);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.slideContent {
+  height: 100%;
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 15px;
+}
+
+.slideBox {
+  background-color: rgba(52,52,52, .95);
+  margin: auto;
+  margin-top: 40px;
+  height: 200px;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.slideEnSavoirPlus {
+  font-size: 10px;
+  display: flex;
+  align-self: stretch;
+  justify-content: space-around;
+  text-decoration: underline;
+}
+
+
+/*COMPETENCES*/
+
+.contentCompetences {
+  display: flex;
+  flex-direction: column;
+}
+
+.compRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.comp {
+  height: 150px;
+  width: 250px;
+  filter: grayscale(100%);
+  overflow: hidden;
+  position: relative;
+  /*background-color: black;*/
+  transition: all .3s linear;
+}
+
+
+.compDroit {
+  padding-left: 20px;
+}
+
+.compDroit .compImages {
+  position: absolute;
+  height: 100px;
+  width: 200px;
+  background-color: #FBFCFA;
+  left: 50px;
+
+  transition: all .3s linear;
+
+}
+
+.compDroit .compImages img {
+  margin-left: -40px;
+}
+
+#compHtml {
+  color: #E54D26;
+
+}
+
+#compCss {
+  color: #0085C6;
+}
+
+#compJs {
+  color: #D6BA32;
+}
+
+#compPhp {
+  color: #5B66A4;
+}
+
+#compJQuery {
+  color: #C94340;
+}
+
+#compBootstrap {
+  color: #5B4282;
+}
+
+
+.comp .bouton {
+  border-color: #373737;
+  margin-top: 20px;
+  color: inherit;
+  border-color: inherit;
+  padding: 10px 20px;
+  cursor: default;
+}
+
+.compDroit .bouton {
+  padding-right: 100px;
+}
+
+/*EXPERIENCE*/
+.contentExp {
+  display: flex;
+  width: 100%;
+  /*height: 500px;*/
+}
+
+.date p:before {
+  content: "►";
+  position: absolute;
+  left: -18px;
+  top: 10px;
+}
+
+.articleExp {
+  margin: 10px;
+  padding-top: 25%;
+  padding-bottom: 25%;
+  width: 80%;
+  /*overflow: scroll;*/
+  /*overflow-x: hidden;*/
+}
+
+.exp {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.date {
+  letter-spacing: 2px;
+  opacity: .7;
+  margin-bottom: 30px;
+}
+
+/*FONCTION GLOBALE*/
+
+.toColor {
+  filter: grayscale(0%);
+}
