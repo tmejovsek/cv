@@ -6,7 +6,8 @@ $(function(){
       $('.bar').addClass('close');
       $(this).removeClass('close');
       $(this).addClass('open');
-      $('.iconPlus').css('transform', 'rotate(0deg)');
+      $('.iconPlus').css('transform', 'rotate(-45deg)');
+      $('.iconPlus', this).css('transform', 'rotate(0deg)');
     }
     else {
       $('.bar').addClass('close');
