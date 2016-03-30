@@ -508,6 +508,17 @@ nav .bouton.clicked {
   color: #5B4282;
 }
 
+#compCsharp {
+  color: #685E90;
+}
+
+#compCsharp .bouton, #compCplusplus .bouton{
+  margin-top: 26px;
+}
+
+#compCplusplus {
+  color: #659CD4;
+}
 
 .comp .bouton {
   border-color: #373737;
@@ -526,6 +537,7 @@ nav .bouton.clicked {
 .contentExp {
   display: flex;
   width: 100%;
+
   /*height: 500px;*/
 }
 
@@ -541,6 +553,7 @@ nav .bouton.clicked {
   padding-top: 25%;
   padding-bottom: 25%;
   width: 80%;
+
   /*overflow: scroll;*/
   /*overflow-x: hidden;*/
 }
@@ -550,6 +563,7 @@ nav .bouton.clicked {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .date {
