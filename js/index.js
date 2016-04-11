@@ -1,5 +1,9 @@
 $( document ).ready(function() {
 
+  $('#btnWarning').on('click', function() {
+    $('#warning').fadeOut(500);
+  })
+
   $('#btnOpen').on('click', function() {
     if ( $('#contenu').hasClass('openContenu') ) {
       $('#contenu').css('width', '0%');
