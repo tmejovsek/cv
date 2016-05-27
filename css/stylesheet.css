@@ -333,7 +333,6 @@ nav .bouton.clicked {
   width: 100%;
   height: 250px;
   background-image: url("../images/logo_upto.png");
-  background-size: cover;
 }
 
 /*SPAN*/
@@ -356,7 +355,7 @@ nav .bouton.clicked {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   overflow: hidden;
 }
 
@@ -397,6 +396,7 @@ nav .bouton.clicked {
   border: 1px solid black;
   background-image: url("../images/bg.jpg");
   overflow: hidden;
+  background-size: cover;
 }
 
 .open {
@@ -541,6 +541,14 @@ nav .bouton.clicked {
   color: #659CD4;
 }
 
+#compAngularjs {
+  color: #E52A3A;
+}
+
+#compSql {
+  color: #3AD7D1;
+}
+
 .comp .bouton {
   border-color: #373737;
   margin-top: 20px;
@@ -599,6 +607,10 @@ nav .bouton.clicked {
 
 @media (max-width: 1200px) {
   #warning {
-    display: flex;
+    display: -webkit-flex;
+    -moz-flex;
+    -ms-flex;
+    -o-flex;
+    flex;
   }
 }
