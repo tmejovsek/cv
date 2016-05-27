@@ -61,7 +61,11 @@ hr {
   position: fixed;
 }
 
-/*PARTIE GAUCHE*/
+/* ==========================================================================
+   PARTIE GAUCHE
+   ========================================================================== */
+
+
 #accueil {
   width: 50%;
   height: 100%;
@@ -259,7 +263,10 @@ p {
   background-size: cover;
 }
 
-/*PARTIE DROITE*/
+/* ==========================================================================
+   PARTIE DROITE
+   ========================================================================== */
+
 
 /*INITIALISATION*/
 .volet {
@@ -281,6 +288,7 @@ p {
   transition: all .3s linear;
   color: #373737;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 #cross {
@@ -347,7 +355,11 @@ nav .bouton.clicked {
 }
 
 
-/*ACCORDEON*/
+/* ==========================================================================
+   ACCORDEON
+   ========================================================================== */
+
+
 
 #panorama1 {
   width: 100%;
@@ -465,7 +477,11 @@ nav .bouton.clicked {
 }
 
 
-/*COMPETENCES*/
+/* ==========================================================================
+   COMPETENCES
+   ========================================================================== */
+
+
 
 .contentCompetences {
   display: flex;
@@ -568,7 +584,11 @@ nav .bouton.clicked {
   padding-right: 100px;
 }
 
-/*EXPERIENCE*/
+/* ==========================================================================
+   EXPERIENCES
+   ========================================================================== */
+
+
 .contentExp {
   display: flex;
   width: 100%;
@@ -601,6 +621,23 @@ nav .bouton.clicked {
   opacity: .7;
   margin-bottom: 30px;
 }
+
+/* ==========================================================================
+   DIVERS
+   ========================================================================== */
+
+.imageDivers {
+  width: 120%;
+  height: 10em;
+  margin-left: -65px;
+  margin-bottom: 5%;
+}
+
+.association {
+  background-image: url("../images/divers/bgAssoc.jpg");
+  background-size: cover;
+}
+
 
 /*FONCTION GLOBALE*/
 
