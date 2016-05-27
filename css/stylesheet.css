@@ -246,6 +246,10 @@ p {
   color: #1DADEA;
 }
 
+#social .ion-social-linkedin:hover {
+  color: #1D87BE;
+}
+
 /*FOND*/
 
 #fond {
